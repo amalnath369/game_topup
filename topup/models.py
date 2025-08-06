@@ -12,7 +12,7 @@ class Game(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return str(self.name)  # in case name is not a str type
+        return str(self.name)  
 
 
 class TopUpProduct(models.Model):
@@ -24,7 +24,7 @@ class TopUpProduct(models.Model):
     in_game_currency = models.CharField(max_length=100)
 
     def __str__(self):
-        return str(self.name)  # in case name is not a str type
+        return str(self.name)  
 
 
 class TopUpOrder(models.Model):
